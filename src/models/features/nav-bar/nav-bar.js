@@ -158,7 +158,6 @@ function layoutSetup(tab = 'All') {
                      :  mainDiv.append(heading, ...tabTasksElems,addTaskElement) ;
     wrapperDiv.append(navBar, mainDiv);
     document.querySelector('body').append(header,wrapperDiv);
-    // document.querySelector('body').append(wrapperDiv);
 }
 
 export const run = (tab = 'All') => {
@@ -325,7 +324,6 @@ function handleNavItemClicked() {
     right.append(heading,...allTasks)
     return;
    }
-
    tabTasksElems.length === 0? right.append(heading,addTaskElement)
                              : right.append(heading, ...tabTasksElems ,addTaskElement) ;
 }
@@ -345,12 +343,10 @@ function activatePopup() {
         projectItemsList.push(project);
         storeItems(false);
         body.innerHTML = null;
-        body.classList.remove('popup-add');
         run();
     });
     const cancelBtn = buttonElem('Cancel', 'cancel-btn', () => {
        body.innerHTML = null;
-       body.classList.remove('popup-add');
        run();
     });
     
@@ -615,8 +611,8 @@ function isDone(task) {
 }
 
 function updateUiForCompleted(task, p) {
-    if(task.isDone == true) {
-        p.classList.add('is-done');         
-    }
-    p.classList.remove('is-done');
+    // if(task.isDone == true) {
+    //     p.classList.add('is-done');         
+    // }
+    // p.classList.remove('is-done');
 }

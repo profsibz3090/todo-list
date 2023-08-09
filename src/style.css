@@ -16,9 +16,10 @@ body {
     font-family: 'Roboto';
 }
 
-#wrapper-container {
+body.or1.or2 {
   display: flex;
   flex-direction: column;
+  background-color: red;
 }
 
 body > div.wrapper {
@@ -263,4 +264,10 @@ input[type='checkbox'] {
 
 .is-done {
     text-decoration: line-through;
+}
+
+body.popup-add {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
 }
