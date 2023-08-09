@@ -158,6 +158,7 @@ function layoutSetup(tab = 'All') {
                      :  mainDiv.append(heading, ...tabTasksElems,addTaskElement) ;
     wrapperDiv.append(navBar, mainDiv);
     document.querySelector('body').append(header,wrapperDiv);
+    // document.querySelector('body').append(wrapperDiv);
 }
 
 export const run = (tab = 'All') => {
@@ -344,10 +345,12 @@ function activatePopup() {
         projectItemsList.push(project);
         storeItems(false);
         body.innerHTML = null;
+        body.classList.remove('popup-add');
         run();
     });
     const cancelBtn = buttonElem('Cancel', 'cancel-btn', () => {
        body.innerHTML = null;
+       body.classList.remove('popup-add');
        run();
     });
     
