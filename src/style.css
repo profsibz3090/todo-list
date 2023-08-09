@@ -19,7 +19,7 @@ body {
 body.or1.or2 {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  /* background-color: red; */
 }
 
 body > div.wrapper {
