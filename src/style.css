@@ -269,5 +269,5 @@ input[type='checkbox'] {
 .popup-add {
     display: flex;
     flex-direction: column;
-    background-color: red;
+    /* background-color: red; */
 }
