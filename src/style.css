@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../src//assets/Roboto/Roboto-Bold.ttf),url(../src//assets/Roboto/Roboto-Regular.ttf);
+}
+
+body {
+    background-color: azure;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto';
+}
+
+body > div.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+div.nav-bar {
+    background-color: lightgreen;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 5rem;
+    padding: .5rem;
+}
+
+div.main {
+    padding: 0 .5rem;
+    flex-grow: 1;
+    flex-grow: 5;
+}
+
+.nav-item-image ,.project-item-image {
+    width: 2rem;
+}
+
+.nav-item {
+    display: flex;
+    gap: .3rem;
+    font-size: 1.2rem;
+    align-items: center;
+    cursor: pointer;
+    padding: .1rem;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .1rem;
+}
+
+.project-left {
+    cursor: pointer;
+}
+
+.project-item:hover {
+    background-color: azure;
+}
+
+.nav-item:hover {
+    background-color: azure;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-top, .nav-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    font-size: 1.2rem;
+}
+
+.nav-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.add-icon {
+    width: 2rem;
+}
+
+.add-project, .add-task {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.popup-form {
+    padding: 1rem;
+    background-color: lightgreen;
+    width: clamp(7rem, 40%, 100%);
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.popup-form input {
+    padding: .4rem;
+
+}
+
+.row-grp {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.buttons {
+   display: flex;
+   gap: .2rem;
+}
+
+.add-btn, .cancel-btn {
+    flex: 1;
+}
+
+.task {
+    display: flex;
+    width: 100%;
+    gap: .5rem;
+    padding: .2rem;
+    background-color: lightgray;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    border-radius: .2rem;
+    margin-bottom: .4rem;
+}
+
+.task-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: lightgreen;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+select {
+    padding: .4rem;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button {
+    padding: .4rem;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+textarea {
+    padding: .4rem;
+}
+
+.task-left {
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+}
+
+.task-right {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    gap: 1rem;
+}
+.delete-icon {
+    width: 2rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.details-btn {
+    padding: .1rem .4rem;
+}
+
+input[type='checkbox'] {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.details-popup-form {
+    background-color: lightgreen;
+    width: 40%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1.2rem;
+    border-radius: .4rem;
+}
+
+.priority-marker {
+    width: .3rem;
+    height: 2rem;
+    
+}
+
+.priority-high-color {
+  background-color: red;
+}
+
+.priority-medium-color {
+  background-color: orange;
+}
+
+.priority-low-color {
+  background-color: green;
+}
+
+.delete-project-icon {
+    width: 2rem;
+}
+
+.project-left {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.edit-icon {
+    width: 2rem;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    padding: .4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    width: 3rem;
+}
+
+.header-title {
+    font-size: 2rem;
+}
+
+.is-done {
+    text-decoration: line-through;
+}
